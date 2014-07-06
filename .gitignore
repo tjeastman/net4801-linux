@@ -2,3 +2,8 @@
 /.config
 /.config.old
 /.br-external
+/build
+/host
+/images
+/staging
+/target
