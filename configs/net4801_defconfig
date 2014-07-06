@@ -983,7 +983,7 @@ BR2_PACKAGE_QT5_JSCORE_AVAILABLE=y
 #
 # snappy needs a toolchain w/ C++
 #
-# BR2_PACKAGE_ZLIB is not set
+BR2_PACKAGE_ZLIB=y
 
 #
 # Crypto
@@ -1013,7 +1013,9 @@ BR2_PACKAGE_QT5_JSCORE_AVAILABLE=y
 # BR2_PACKAGE_LIBSHA1 is not set
 # BR2_PACKAGE_LIBSSH2 is not set
 # BR2_PACKAGE_NETTLE is not set
-# BR2_PACKAGE_OPENSSL is not set
+BR2_PACKAGE_OPENSSL=y
+# BR2_PACKAGE_OPENSSL_BIN is not set
+# BR2_PACKAGE_OPENSSL_ENGINES is not set
 # BR2_PACKAGE_POLARSSL is not set
 
 #
@@ -1678,6 +1680,7 @@ BR2_PACKAGE_NCURSES=y
 #
 # atftp needs a toolchain w/ threads, IPv6
 #
+# BR2_PACKAGE_AUTOSSH is not set
 # BR2_PACKAGE_AVAHI is not set
 # BR2_PACKAGE_AXEL is not set
 
@@ -1841,7 +1844,7 @@ BR2_PACKAGE_IPTABLES=y
 #
 # openobex needs a toolchain w/ IPv6
 #
-# BR2_PACKAGE_OPENSSH is not set
+BR2_PACKAGE_OPENSSH=y
 # BR2_PACKAGE_OPENSWAN is not set
 
 #
