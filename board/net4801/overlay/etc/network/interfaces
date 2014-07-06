@@ -1,0 +1,19 @@
+# loopback interface
+auto lo
+iface lo inet loopback
+
+# external interface
+auto eth0
+iface eth0 inet dhcp
+
+# internal interface
+auto eth1
+iface eth1 inet static
+    address 10.0.0.1
+    netmask 255.255.255.0
+
+# internal interface
+auto eth2
+iface eth2 inet static
+    address 10.0.1.1
+    netmask 255.255.255.0
