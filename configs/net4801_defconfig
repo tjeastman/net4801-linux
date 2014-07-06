@@ -1750,7 +1750,7 @@ BR2_PACKAGE_LIBNSPR_ARCH_SUPPORT=y
 #
 # ipset needs a toolchain w/ largefile
 #
-# BR2_PACKAGE_IPTABLES is not set
+BR2_PACKAGE_IPTABLES=y
 
 #
 # iptraf-ng needs a toolchain w/ IPv6
