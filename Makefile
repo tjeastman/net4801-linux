@@ -1,3 +1,5 @@
+export BR2_EXTERNAL := $(shell pwd)
+
 lastword = $(word $(words $(1)),$(1))
 makedir := $(dir $(call lastword,$(MAKEFILE_LIST)))
 
