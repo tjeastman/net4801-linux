@@ -1,0 +1,12 @@
+#!/bin/sh
+
+IPTABLES=/usr/sbin/iptables
+
+$IPTABLES -F
+$IPTABLES -t nat -F
+$IPTABLES -t mangle -F
+
+# drop everything
+$IPTABLES -P INPUT DROP
+$IPTABLES -P OUTPUT DROP
+$IPTABLES -P FORWARD DROP

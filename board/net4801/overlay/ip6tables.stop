@@ -1,0 +1,10 @@
+#!/bin/sh
+
+IPTABLES=/usr/sbin/ip6tables
+
+$IPTABLES -F
+
+# drop everything
+$IPTABLES -P INPUT DROP
+$IPTABLES -P OUTPUT DROP
+$IPTABLES -P FORWARD DROP
