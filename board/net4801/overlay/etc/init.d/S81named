@@ -10,12 +10,15 @@ case "$1" in
 	start)
 		if [ ! -f /etc/rndc.key ]; then
 		    echo -n "Initializing bind control key: "
-                    # if rndc.key is a symlink, the target must exist
+		    # if rndc.key is a symlink, the target must exist
 		    touch /etc/rndc.key
 		    rndc-confgen -a -r /dev/urandom 2>/dev/null && echo "OK" || echo "FAIL"
 		fi
+		if [ ! -d /var/cache/bind/ ]; then
+		    mkdir -p /var/cache/bind/
+		    chown named:named /var/cache/bind/
+		fi
 		echo -n "Starting domain name daemon: "
-                test -d /var/cache/bind/ || mkdir -p /var/cache/bind/
 		start-stop-daemon -S -x $DAEMON -- -c $CONFIG -u named
 		[ $? == 0 ] && echo "OK" || echo "FAIL"
 		;;
