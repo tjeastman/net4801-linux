@@ -18,6 +18,10 @@ case "$1" in
 		    mkdir -p /var/cache/bind/
 		    chown named:named /var/cache/bind/
 		fi
+		if [ -f /etc/dhcp/ddns.key ]; then
+		    cp /etc/dhcp/ddns.key /etc/bind/
+		    chown named:named /etc/bind/ddns.key
+		fi
 		echo -n "Starting domain name daemon: "
 		start-stop-daemon -S -x $DAEMON -- -c $CONFIG -u named
 		[ $? == 0 ] && echo "OK" || echo "FAIL"

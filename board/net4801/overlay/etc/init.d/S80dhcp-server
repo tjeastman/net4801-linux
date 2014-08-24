@@ -14,6 +14,7 @@ case "$1" in
 		echo -n "Starting DHCP server: "
 		test -d /var/lib/dhcp/ || mkdir -p /var/lib/dhcp/
 		test -f /var/lib/dhcp/dhcpd.leases || touch /var/lib/dhcp/dhcpd.leases
+		test -f /etc/dhcp/ddns.key || rndc-confgen -a -r /dev/urandom -c /etc/dhcp/ddns.key -k DDNS_UPDATE
 		start-stop-daemon -S -x /usr/sbin/dhcpd -- -q $INTERFACES
 		[ $? == 0 ] && echo "OK" || echo "FAIL"
 		;;
