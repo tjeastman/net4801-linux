@@ -33,5 +33,5 @@ and commit.
 
 It is possible to change the configuration of busybox and linux in a similary way.
 The corresponding configuration systems can be accessed with `make busybox-menuconfig` or `make linux-menuconfig`.
-These store configurations in `build/busybox-1.22.1/.config` and `build/linux-3.16/.config` respectively.
+These store configurations in `build/busybox-1.29.3/.config` and `build/linux-4.18.20/.config` respectively.
 Copy any changes into `board/net4801/` and commit.
