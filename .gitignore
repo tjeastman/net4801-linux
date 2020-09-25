@@ -1,10 +1,10 @@
 ..config.tmp
+.br-external
+.br-external.mk
 .config
 .config.old
-.br-external
 build
 host
 images
 staging
 target
-.br-external.mk
