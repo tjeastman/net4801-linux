@@ -2382,7 +2382,6 @@ BR2_PACKAGE_WINE_ARCH_SUPPORTS=y
 # asterisk needs a glibc toolchain w/ C++
 #
 # BR2_PACKAGE_ATFTP is not set
-# BR2_PACKAGE_AUTOSSH is not set
 # BR2_PACKAGE_AVAHI is not set
 # BR2_PACKAGE_AXEL is not set
 # BR2_PACKAGE_BABELD is not set
@@ -2612,7 +2611,7 @@ BR2_PACKAGE_NTP_NTPD=y
 # BR2_PACKAGE_OPEN_PLC_UTILS is not set
 # BR2_PACKAGE_OPENOBEX is not set
 # BR2_PACKAGE_OPENRESOLV is not set
-BR2_PACKAGE_OPENSSH=y
+# BR2_PACKAGE_OPENSSH is not set
 # BR2_PACKAGE_OPENSWAN is not set
 # BR2_PACKAGE_OPENVPN is not set
 # BR2_PACKAGE_P910ND is not set
