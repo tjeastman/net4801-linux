@@ -2,7 +2,7 @@
 
 # On what interfaces should the DHCP server (dhcpd) serve DHCP requests?
 #       Separate multiple interfaces with spaces, e.g. "eth0 eth1".
-INTERFACES="eth1 eth2"
+INTERFACES="wlan0 eth1 eth2"
 
 # Sanity checks
 test -f /usr/sbin/dhcpd || exit 0
