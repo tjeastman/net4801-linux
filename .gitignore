@@ -3,6 +3,7 @@
 .br-external.mk
 .config
 .config.old
+.envrc
 build
 host
 images
