@@ -1,6 +1,8 @@
 ..config.tmp
 .br-external
 .br-external.mk
+.br2-external.in.*
+.br2-external.mk
 .config
 .config.old
 .envrc
