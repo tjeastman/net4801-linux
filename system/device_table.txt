@@ -1,1 +1,2 @@
 /etc/ddns.key f 644 root root - - - - -
+/var/cache/bind d 700 named named - - - - -
