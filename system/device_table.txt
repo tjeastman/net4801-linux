@@ -1,2 +1,4 @@
 /etc/ddns.key f 644 root root - - - - -
 /var/cache/bind d 700 named named - - - - -
+/root/.ssh d 700 root root - - - - -
+/root/.ssh/authorized_keys f 600 root root - - - - -
