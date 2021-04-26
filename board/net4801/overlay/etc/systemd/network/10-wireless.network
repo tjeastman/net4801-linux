@@ -1,0 +1,6 @@
+[Match]
+Name=wlp0s10
+
+[Network]
+Address=10.0.0.1/24
+ConfigureWithoutCarrier=true

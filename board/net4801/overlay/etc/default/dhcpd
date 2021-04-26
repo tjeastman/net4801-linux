@@ -1,1 +1,1 @@
-INTERFACES="wlan0 eth1 eth2"
+INTERFACES="wlp0s10 enp0s7 enp0s8"
