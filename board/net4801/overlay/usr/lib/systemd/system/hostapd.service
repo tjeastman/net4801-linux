@@ -7,9 +7,7 @@ Type=forking
 PIDFile=/run/hostapd.pid
 Restart=on-failure
 RestartSec=2
-Environment=DAEMON_CONF=/etc/hostapd.conf
-EnvironmentFile=-/etc/default/hostapd
-ExecStart=/usr/sbin/hostapd -B -P /run/hostapd.pid $DAEMON_OPTS ${DAEMON_CONF}
+ExecStart=/usr/sbin/hostapd -B -P /run/hostapd.pid /etc/hostapd.conf
 
 [Install]
 WantedBy=multi-user.target
