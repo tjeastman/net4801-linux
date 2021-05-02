@@ -9,5 +9,6 @@
 build
 host
 images
+overlay
 staging
 target
