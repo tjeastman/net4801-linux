@@ -1,0 +1,18 @@
+[Unit]
+Description=iptables persistent configuration
+DefaultDependencies=no
+Wants=network-pre.target systemd-modules-load.service local-fs.target
+Before=network-pre.target shutdown.target
+After=systemd-modules-load.service local-fs.target
+Conflicts=shutdown.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/iptables.start
+ExecStart=/ip6tables.start
+ExecStop=/iptables.stop
+ExecStop=/ip6tables.stop
+
+[Install]
+WantedBy=multi-user.target
