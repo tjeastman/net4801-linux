@@ -1136,7 +1136,20 @@ BR2_PACKAGE_FLASHROM_ARCH_SUPPORTS=y
 #
 # lirc-tools needs a toolchain w/ threads, dynamic library, C++
 #
-# BR2_PACKAGE_LM_SENSORS is not set
+BR2_PACKAGE_LM_SENSORS=y
+
+#
+# lm-sensors tools
+#
+BR2_PACKAGE_LM_SENSORS_SENSORS=y
+# BR2_PACKAGE_LM_SENSORS_FANCONTROL is not set
+# BR2_PACKAGE_LM_SENSORS_ISADUMP is not set
+# BR2_PACKAGE_LM_SENSORS_ISASET is not set
+# BR2_PACKAGE_LM_SENSORS_PWMCONFIG is not set
+
+#
+# sensors-detect needs perl
+#
 
 #
 # lshw needs a toolchain w/ C++, wchar
